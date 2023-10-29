@@ -17,6 +17,7 @@ let g = document.getElementsByClassName("command-line")[0];
 let hint = document.getElementsByClassName("hint")[0];
 a.addEventListener("click",()=>{
     let b = document.getElementById("val").value;
+    if(b.length<=0) return;
     console.log(randomInt);
     if(randomInt == undefined || isNaN(b)){
         g.innerHTML = "please enter the number";
